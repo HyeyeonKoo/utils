@@ -20,3 +20,6 @@
   - 각 검색 문장별로 "검색 결과 점수 / 정답 점수"를 구하고, 모든 계산 결과를 평균
   
 *자세한 이론은 [여기](https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832)를 참고하세요.*
+
+### Quick Start
+*자세한 사용방법은 [test](https://github.com/HyeyeonKoo/utils/blob/main/ir_eval/ir_eval_test.py)를 참고하세요.*
