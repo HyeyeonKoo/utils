@@ -7,7 +7,7 @@
 
 ### Theory
 - MRR : Mean Reciprocal Rank
-  - 각 검색 문장별 상위 n개의 검색 결과와 정답을 비교해 가장 높은 위치를 역수로 계싼
+  - 각 검색 문장별 상위 n개의 검색 결과와 정답을 비교해 가장 높은 위치를 역수로 계산
   - 각 검색 문장별 계산 결과를 평균
   
 - MAP : Mean Average Precision
