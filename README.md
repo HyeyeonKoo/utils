@@ -9,3 +9,11 @@
 - kss를 이용한 문장 분리
 - konlpy를 이용한 형태소 단위 tokenizing
 - sentencepiece를 이용한 subword 분절
+
+### [similarity](https://github.com/HyeyeonKoo/utils/tree/main/similarity)
+- l1, l2, inf 거리
+- 코사인, 자카드 유사도
+
+### [word representation](https://github.com/HyeyeonKoo/utils/tree/main/word_representation)
+- 간단한 인코딩
+- TF-IDF, context 행렬 등 간단한 단어 벡터를 구현
