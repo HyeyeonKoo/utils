@@ -10,7 +10,7 @@ class NsmcLstm(nn.Module):
 
         self.lstm = nn.LSTM(input_size=input_size, 
             hidden_size=hidden_size,
-            num_layers=1,
+            num_layers=2,
             batch_first=True,
             bidirectional=True)
 
