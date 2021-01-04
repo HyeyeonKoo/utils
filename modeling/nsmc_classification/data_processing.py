@@ -3,7 +3,7 @@
 from collections import Counter
 import torch
 from konlpy.tag import Mecab
-m = Mecab("C:\mecab\mecab-ko-dic")
+m = Mecab()
 
 
 def load_data(path):
@@ -18,7 +18,7 @@ def load_data(path):
                 data.append(data_)
                 label.append([float(label_)])
 
-    return data, torch.tensor([label], dtype=torch.float32)
+    return data, [label]
 
 
 def encoding(train_data, test_data, count_limit=2, len_limit=None, batch_size=1):
@@ -35,10 +35,10 @@ def encoding(train_data, test_data, count_limit=2, len_limit=None, batch_size=1)
     train_pad = padding(train_encode, word_index, max_len)
     test_pad = padding(test_encode, word_index, max_len)
 
-    train_batch = torch.reshape(torch.tensor([train_pad], requires_grad=True, dtype=torch.float32), 
+    train_batch = torch.reshape(torch.tensor([train_pad]), 
         (batch_size, int(len(train_pad)/batch_size), max_len))
     test_batch = torch.reshape(torch.tensor([test_pad], dtype=torch.float32), 
-        (batch_size, int(len(test_pad)/batch_size), max_len))
+        (1, int(len(test_pad)/batch_size), max_len))
 
     return train_batch, test_batch
 
