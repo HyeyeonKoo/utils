@@ -17,3 +17,6 @@
 ### [word representation](https://github.com/HyeyeonKoo/utils/tree/main/word_representation)
 - 간단한 인코딩
 - TF-IDF, context 행렬 등 간단한 단어 벡터를 구현
+
+### [modeling](https://github.com/HyeyeonKoo/utils/tree/main/modeling)
+- 모델링 한 코드들 저장
