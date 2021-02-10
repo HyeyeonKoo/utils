@@ -30,8 +30,7 @@ print("time : " + str(end-start))
 # Make Data for ES
 from tqdm import tqdm
 
-
- start = datetime.now()
+start = datetime.now()
 
 for el in tqdm(data):
     el["title_vector"] = model.encode(el["morphs"]).tolist()
