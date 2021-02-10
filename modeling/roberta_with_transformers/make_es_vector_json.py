@@ -19,8 +19,8 @@ with open("data/data_for_es.txt", "r", encoding="utf-8") as f:
 # Model
 start = datetime.now()
 
-word_embedding_model = models.Transformer('pre_model/CusomRoBERTa', max_seq_length=512)
-pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension())
+embedding_model = models.Transformer('pre_model/CusomRoBERTa', max_seq_length=512)
+pooling_model = models.Pooling(embedding_model.get_word_embedding_dimension())
 
 model = SentenceTransformer(modules=[word_embedding_model, pooling_model])
 
