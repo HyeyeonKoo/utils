@@ -20,3 +20,7 @@
 
 ### [modeling](https://github.com/HyeyeonKoo/utils/tree/main/modeling)
 - 모델링 한 코드들 저장
+
+
+### [naver_ner](https://github.com/HyeyeonKoo/utils/tree/main/modeling/naver_ner)
+- KoBERT, CRF를 이용한 NER
